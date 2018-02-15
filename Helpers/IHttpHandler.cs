@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Net.Http;
 
 namespace Helpers
 {
-    class IHttptHandler
+    public interface IHttpHandler
     {
+        HttpResponseMessage Get(string url, IDictionary<string, string> headers);
+
+        HttpResponseMessage Send(HttpRequestMessage requestMessage);
     }
 }
