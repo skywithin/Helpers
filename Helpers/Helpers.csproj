@@ -43,6 +43,7 @@
     <Compile Include="HttpClientHandler.cs" />
     <Compile Include="IHttpHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaskExtensions.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
